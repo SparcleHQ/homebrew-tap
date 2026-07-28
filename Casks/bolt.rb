@@ -8,6 +8,11 @@ cask "bolt" do
   desc "Local-first AI workspace with governed data egress"
   homepage "https://sparcle.app/"
 
+  # Bolt ships a Tauri updater and updates itself in place. Without this, Homebrew treats a
+  # self-updated app as drift and `brew upgrade` reinstalls over it — two updaters fighting
+  # over the same bundle, which is how a working install ends up half-replaced.
+  auto_updates true
+
   app "Bolt Enterprise.app"
 
   zap trash: [
