@@ -1,9 +1,9 @@
 cask "bolt" do
-  version "0.1.141"
-  sha256 arm:   "bc7cd0e1c95e4bc69fa7b021d1d5786e5774d6ab0fd565e6c0683ce2c703121c",
-         intel: "f4bb01e15f7b5e24f252981574b87a70bb30829cc6167f9ad0991e883ad85a15"
+  version "0.1.142"
+  sha256 arm:   "3f2eae475db771578e8d7584c9befc58ccca2854705848eaa17b1f19b58ea86f",
+         intel: "TBD"
 
-  url "https://github.com/SparcleHQ/sparcle.app/releases/download/v0.1.141/Bolt-Enterprise-#{version}-#{Hardware::CPU.arm? ? "aarch64" : "x86_64"}-apple-darwin.dmg"
+  url "https://github.com/SparcleHQ/sparcle.app/releases/download/v0.1.142/Bolt-Enterprise-#{version}-#{Hardware::CPU.arm? ? "aarch64" : "x86_64"}-apple-darwin.dmg"
   name "Bolt"
   desc "Local-first AI workspace with governed data egress"
   homepage "https://sparcle.app/"
