@@ -1,7 +1,7 @@
 cask "bolt" do
-  version "0.1.180"
-  sha256 arm:   "721ee33c62a36fd01b13a863091a628f47defdcd29a1f5eb84a64b9458cc6ebc",
-         intel: "2ef0f781a2ead23e3aae308ccb81055ce09cd05bd0aa86377efa12259b102fa4"
+  version "0.1.181"
+  sha256 arm:   "9006fb6487d0fefd721e4ea14848651c2e345d3db04c1f8db9319072ef5c401b",
+         intel: "0adc4d1f513ba233d6db1c890763ab31907764baef3b93a3dd323fb7ee4a13d4"
 
   url "https://github.com/SparcleHQ/sparcle.app/releases/download/v#{version}/Bolt-Enterprise-#{version}-#{Hardware::CPU.arm? ? "aarch64" : "x86_64"}-apple-darwin.dmg"
   name "Bolt"
